@@ -1,0 +1,23 @@
+extends ../common/layout 
+
+block layout-content 
+    div.project-form-container
+        h2 Add Your Project 
+        form(action="/projects/add/submit", method="POST")
+            div 
+                label(for="name") Project Name:
+                input(type="text", name="name", id="name", placeholder="Your Project Name")
+            div 
+                label(for="summary") Summary:
+                textarea(name="summary", id="summary", placeholder="Details of your Project")  
+            div 
+                label(for="techStack") Technologies Used:
+                input(type="text", name="techStack", id="techStack", placeholder="HTML, CSS")
+            div 
+                label(for="status") Status:
+                input(type="text", name="status", id="status", placeholder="Completed?")
+            div 
+                label(for="timespan") TimeSpan:
+                input(type="text", name="timespan", id="timespan", placeholder="1 Month")
+            div 
+                button.add-btn(type="submit") Add Project

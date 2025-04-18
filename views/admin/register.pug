@@ -1,0 +1,17 @@
+extends ../common/layout 
+
+block layout-content
+    .login-page
+        h1 Registration Form 
+        form(action="/admin/register" method="POST" class="form-element")
+            .form-element
+                label(for="user") Username: 
+                input(type="text" id="user" name="user" placeholder="Enter the username")
+            .form-element
+                label(for="pass") Password: 
+                input(type="password" id="pass" name="pass" placeholder="Enter the password")
+            .form-element
+                button(type="submit" class="add-btn") Register
+        p
+            | Already have an account? 
+            a(href="/admin/login") Login now

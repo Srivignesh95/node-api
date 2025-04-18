@@ -1,0 +1,458 @@
+/* 🌟 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* 🔹 Header & Navigation */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+}
+
+#site-name a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  display: inline;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#main-nav ul li a:hover {
+  color: #3498db;
+}
+h1{
+  text-align: center;
+  padding: 1em;
+}
+/* 🔹 Hero Section */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.hero a.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* 🔹 Skills Section */
+.skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills .col-md-2 {
+  flex: 1 1 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+  min-width: 160px;
+}
+
+.skills .card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skills .card h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+/* 🔹 Featured Projects Section */
+.projects {
+  background: #f8f9fa;
+  padding: 50px 20px;
+}
+
+.projects h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 🔹 Project Grid */
+.projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* 🔹 Project Cards */
+.projects .card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projects .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Project Card Titles */
+.projects .card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Project Card Text */
+.projects .card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Buttons */
+.projects .card a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.projects .card a:hover {
+  background: #3498db;
+  color: white;
+}
+/* 🔹 Experience & Projects Section */
+.projects-container, .experience-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Ensure ul doesn't interfere */
+.project-list, .experience-list {
+  display: contents;
+  padding: 0;
+  margin: 0;
+}
+
+/* Project & Experience Cards */
+.project-card, .experience-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover, .experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-body h2, .experience-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-body p, .experience-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.project-body p span, .experience-card p span {
+  font-weight: bold;
+  color: #222;
+}
+
+/* 🔹 Buttons */
+.btn-primary {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.add-btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 12px 18px;
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.add-btn:hover {
+  background: #2980b9;
+}
+
+/* 🔹 Form Styling (For Both Project & Experience Add Pages) */
+.project-form-container, .experience-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.project-form-container form, .experience-form-container form {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Fields */
+.project-form-container form label, .experience-form-container form label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.project-form-container form input,
+.project-form-container form textarea,
+.experience-form-container form input,
+.experience-form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+/* Focus State */
+.project-form-container form input:focus,
+.project-form-container form textarea:focus,
+.experience-form-container form input:focus,
+.experience-form-container form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+/* 🔹 Login Page Container */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* 🔹 Login Heading */
+.login-page h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 🔹 Login Form */
+.login-page .form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-page .form-element label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.login-page .form-element input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.login-page .form-element input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* 🔹 Login Button */
+.login-page .add-btn {
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-page .add-btn:hover {
+  background: #2980b9;
+}
+
+/* 🔹 Register Link */
+.login-page p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-page p a {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-page p a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .login-page {
+    padding: 10px;
+  }
+  .login-page .form-element {
+    max-width: 100%;
+  }
+  .login-page .add-btn {
+    max-width: 100%;
+  }
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .projects-container, .experience-container {
+      grid-template-columns: 1fr;
+  }
+  .skills .col-md-2 {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  .project-form-container form, .experience-form-container form {
+    max-width: 100%;
+    padding: 15px;
+  }
+}

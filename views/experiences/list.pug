@@ -1,0 +1,26 @@
+extends ../common/layout
+
+block layout-content
+    h1 My Experience
+    div.experience-container
+        ul.experience-list
+            each item in experience
+                li.experience-card
+                    h2= item.title
+                    h3= item.company  
+                    p 
+                        span Start Year:
+                        |  #{item.startYear}
+                    p 
+                        span End Year:
+                        |  #{item.endYear}
+                    p 
+                        span Location:
+                        |  #{item.location}
+                    p 
+                        span Description:
+                        |  #{item.description}
+                    form(action="/experiences/delete/submit")
+                        input(type="hidden", name="linkid" value=item._id)
+                        button.delete-btn(type="submit") Delete
+    a.add-btn(href="/experiences/add") Add a new Experience

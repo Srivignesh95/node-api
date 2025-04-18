@@ -1,0 +1,78 @@
+extends common/layout
+
+block layout-content
+    section.hero.text-center.py-5.bg-light
+        .container
+            h1.display-4 Hi, I'm Srivignesh Kavle S
+            p.lead A passionate full-stack web developer with expertise in modern web technologies and a strong problem-solving mindset.
+            a.btn.btn-primary.btn-lg.mt-3(href="/projects/list") View My Work
+
+    section.skills.py-5
+        .container
+            h2.text-center.mb-4 My Skills
+            .row.justify-content-center
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title HTML5 & CSS3
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title JavaScript (ES6+)
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title Node.js & Express
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title MongoDB & Mongoose
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title Pug Template Engine
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title C# & ASP.NET Core
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title Database Design (MySQL, PostgreSQL)
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title WordPress & PHP
+                .col-md-2.col-6.mb-3.text-center
+                    .card.shadow-sm
+                        .card-body
+                            h5.card-title Python & Machine Learning
+
+    section.projects.py-5.bg-light
+        .container
+            h2.text-center.mb-4 Featured Projects
+            .row
+                .col-md-6.mb-4
+                    .card.h-100.shadow-sm
+                        .card-body
+                            h3.card-title Vicky's Gas Price Tracker
+                            p.card-text A web app for tracking gas prices, logging trends, and providing real-time insights.
+                            a.btn.btn-outline-primary(href="/projects/gas-tracker") Learn More
+                .col-md-6.mb-4
+                    .card.h-100.shadow-sm
+                        .card-body
+                            h3.card-title Food Waste Reduction for Walmart
+                            p.card-text A digital and offline solution designed to reduce food waste and improve sustainability.
+                            a.btn.btn-outline-primary(href="/projects/food-waste") Learn More
+                .col-md-6.mb-4
+                    .card.h-100.shadow-sm
+                        .card-body
+                            h3.card-title Restaurant Management System
+                            p.card-text A CMS-based application for managing restaurant orders, menu items, and customers efficiently.
+                            a.btn.btn-outline-primary(href="/projects/restaurant-cms") Discover More
+                .col-md-6.mb-4
+                    .card.h-100.shadow-sm
+                        .card-body
+                            h3.card-title Modular Unit Image Converter
+                            p.card-text A tool that converts images into modular construction instructions using various unit measurements.
+                            a.btn.btn-outline-primary(href="/projects/modular-converter") Explore More

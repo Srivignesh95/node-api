@@ -1,0 +1,28 @@
+extends ../common/layout
+
+block layout-content
+    h1 My Projects
+    div.projects-container
+        ul.project-list
+            each item in project
+                li.project-card
+                    div.project-body 
+                        h2= item.name
+                    div.project-body 
+                        p 
+                            span Summary:
+                            |  #{item.summary}
+                        p 
+                            span TechStack:
+                            |  #{item.techStack}
+                        p 
+                            span Status:
+                            |  #{item.status}
+                        p 
+                            span Time Span:
+                            |  #{item.timespan}
+                    div.project-actions
+                        form(action="/projects/delete/submit")
+                            input(type="hidden", name="proid" value=item._id)
+                            button.delete-btn(type="submit") Delete
+    a.add-btn(href="/projects/add") Add a new Experience
