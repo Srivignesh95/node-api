@@ -13,7 +13,10 @@ dotenv.config();
 
 //set up the Express app
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [  "http://localhost:3000"],
+  credentials: true
+}));
 const port = process.env.PORT || "8888";
 
 //set up application template engine
