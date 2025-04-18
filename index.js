@@ -1,5 +1,5 @@
 const express = require("express");
-const cors = require("cors");
+
 const path = require("path"); //needed when setting up static/file paths
 const projectRoutes = require("./components/project/routes");
 const experienceRoutes = require("./components/experience/routes");
@@ -7,17 +7,17 @@ const sessions = require("express-session");
 
 
 const dotenv = require("dotenv");
-
+const cors = require("cors");
 //load the environment variables from .env
 dotenv.config();
-
+const port = process.env.PORT || "8888";
 //set up the Express app
 const app = express();
 app.use(cors({
   origin: [  "http://localhost:3000"],
   credentials: true
 }));
-const port = process.env.PORT || "8888";
+
 
 //set up application template engine
 app.set("views", path.join(__dirname, "views")); //the first "views" is the setting name
