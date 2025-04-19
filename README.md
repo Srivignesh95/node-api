@@ -1,17 +1,17 @@
-# 🌐 Portfolio (Node.js)
+# Portfolio (Node.js)
 
 A personal portfolio web application built using **Node.js** and **Express.js**, designed to showcase projects, experiences, and other professional highlights.
 
 This project is deployed using:
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Frontend**: [https://portfolio-react-srivigneshs-projects.vercel.app/]
 - **Backend**: [https://node-api-5-wjsc.onrender.com/] //First run this before running Frontend
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 /index.js         → Main server entry point  
@@ -23,7 +23,7 @@ This project is deployed using:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Dynamic project and experience sections
 - API integration for content
@@ -32,7 +32,7 @@ This project is deployed using:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Node.js**
 - **Express.js**
@@ -42,7 +42,7 @@ This project is deployed using:
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. **Clone the repo**
 ```bash
@@ -64,7 +64,7 @@ npm run dev  # Starts the app with nodemon
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### 🔹 Backend (Render)
 1. Push your code to a GitHub repo.
@@ -80,7 +80,7 @@ npm start
 ```
 6. Choose a Node version.
 
-### 🔸 Frontend (Vercel)
+### Frontend (Vercel)
 1. Push your frontend code to GitHub (if in a separate folder/repo).
 2. Go to [vercel.com](https://vercel.com) > **Import Project**
 3. Select your repo and follow the prompts.
@@ -89,7 +89,7 @@ npm start
 
 ---
 
-## 🔧 Scripts
+## Scripts
 
 | Script       | Purpose                         |
 |--------------|---------------------------------|
@@ -98,12 +98,6 @@ npm start
 
 ---
 
-## 📄 License
+## Author
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙌 Author
-
-Made with ❤️ by Srivignesh Kavle S.
+Srivignesh Kavle S.
