@@ -13,8 +13,20 @@ dotenv.config();
 const port = process.env.PORT || "8888";
 //set up the Express app
 const app = express();
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://portfolio-react-srivigneshs-projects.vercel.app",
+  "https://node-api-5-wjsc.onrender.com"
+];
+
 app.use(cors({
-  origin: [  "http://localhost:3000"],
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
